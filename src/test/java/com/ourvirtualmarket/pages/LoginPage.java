@@ -47,20 +47,7 @@ public class LoginPage {
         page.waitForSelector(logoutLink);
     }
 
-    public boolean elementIsVisible(String selector) {
-        return page.isVisible(selector);
-    }
 
-    public void performSearch(String selector, String searchTerm) {
-        page.fill(selector, searchTerm);
-        page.press(selector, "Enter");
-        page.waitForTimeout(1000);
-
-    }
-
-    public String getTextContent(String selector) {
-        return page.textContent(selector);
-    }
 
 }
 
